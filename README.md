@@ -1,2 +1,2 @@
 # flappy-bird
-Flappy-bird implementation in Python
+Flappy-bird implementation in Python3
