@@ -270,18 +270,3 @@ while True:
 
     pygame.display.update()
     clock.tick(fps)
-
-
-
-# So when the window is displayed, it may seem like it's just a static black canvas. But pygame
-# is drawing several black frames over and over in a second which influences game fluidity 
-# or how fast the game will actually run.
-
-# We used surfaces to get in the background image and floor animation in the game
-# But remember that surfaces always start from 0,0 (top left) of the window.
-
-# To create the bird object, we need something called rect because it allows us to rotate the bird
-# and make it jump, and detect collision with other objects (pipes) on the screen which isn't possible with surfaces.
-
-# For pipes, since we need to be able to detect collision -- we will again use rect. So we import the image on a surface,
-# put a rect around the pipe_surface, and then blit() it in the event loop.
